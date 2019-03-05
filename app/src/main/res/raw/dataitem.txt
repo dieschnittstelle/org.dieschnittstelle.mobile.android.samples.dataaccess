@@ -1,0 +1,3 @@
+dataItemName=Properties Item
+dataItemType=TYPE1
+dataItemDescription=initial description

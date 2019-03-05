@@ -1,0 +1,1 @@
+package org.dieschnittstelle.mobile.android.dataaccess.model;public interface IDataItemCRUDOperationsFactory {	public IDataItemCRUDOperations getDataItemCRUDOperationsImplForName(String implName);	}

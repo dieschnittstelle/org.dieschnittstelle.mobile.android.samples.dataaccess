@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "970546450942",
+    "firebase_url": "https://dieschnittstelle-mad-todos.firebaseio.com",
+    "project_id": "dieschnittstelle-mad-todos",
+    "storage_bucket": "dieschnittstelle-mad-todos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970546450942:android:d245e21bd62a4f57",
+        "android_client_info": {
+          "package_name": "org.dieschnittstelle.mobile.android.dataaccess"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "970546450942-r05cd9kd26fseok5114aaebogc43lp69.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "THE_API_KEY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

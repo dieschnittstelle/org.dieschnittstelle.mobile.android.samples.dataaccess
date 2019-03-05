@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.dieschnittstelle.mobile.android.dataaccess"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- this permission is required to create an outgoing http connection to the webapp -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- our own permissions that we export -->
+    <permission
+        android:name="org.dieschnittstelle.mobile.android.permission.READ_DATAITEMS"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="org.dieschnittstelle.mobile.android.permission.WRITE_DATAITEMS"
+        android:protectionLevel="dangerous" />
+
+    <application
+        android:name=".DataAccessApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".DataAccessActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DataItemOverviewActivity" />
+        <activity android:name=".DataItemOverviewActivityWithCursorAdapter" />
+        <activity android:name=".DataItemOverviewActivityWithDataItemCursorAdapter" />
+        <activity android:name=".DataItemDetailsViewActivity" />
+
+        <!-- declare a content provider -->
+        <provider
+            android:name="org.dieschnittstelle.mobile.android.dataaccess.model.contentprovider.DataItemContentProvider"
+            android:authorities="org.dieschnittstelle.mobile.android.dataaccess"
+            android:enabled="true"
+            android:exported="true"
+            android:readPermission="org.dieschnittstelle.mobile.android.permission.READ_DATAITEMS"
+            android:writePermission="org.dieschnittstelle.mobile.android.permission.WRITE_DATAITEMS" >
+        </provider>
+    </application>
+
+</manifest>

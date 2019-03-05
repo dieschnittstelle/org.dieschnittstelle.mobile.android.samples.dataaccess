@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/item_name"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:hint="@string/itemdetails_name"
+            android:imeOptions="actionDone"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/item_description"
+            android:layout_width="fill_parent"
+            android:layout_height="150dip"
+            android:gravity="left|top"
+            android:hint="@string/itemdetails_description"
+            android:imeOptions="actionDone"
+            android:padding="5dp"
+            android:textSize="12sp" />
+
+        <!-- use a selector operating on the content! -->
+
+    </LinearLayout>
+
+    <!-- a button whose activation depends on the filling of other elements -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:height="30dip"
+        android:text="Speichern" />
+    
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/saveButton"
+        android:height="30dip"
+        android:text="Löschen" />
+    
+</RelativeLayout>

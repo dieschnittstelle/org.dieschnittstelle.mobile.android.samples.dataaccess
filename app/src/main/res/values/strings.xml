@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DataAccess</string>
+
+    <string name="preferences_name">Preferences</string>
+    <string name="properties_name">Properties</string>
+    <string name="xmlfile_name">XML File</string>
+    <string name="sqlite_name">SQLite</string>
+    <string name="remotebackend_name">Remote Backend</string>
+    
+    <!--  the labels used for the details view -->
+    <string name="itemdetails_description">Beschreibung</string>    
+    <string name="itemdetails_name">Name</string>    
+    
+    <!-- the main menu items -->
+    <string-array name="main_menu">
+        <item>Preferences</item>
+        <item>Properties File</item>
+        <item>SQLite DB</item>
+        <item>SQLite DB Cursor</item>
+        <item>DataItem Cursor</item>
+        <item>Remote HttpClient</item>
+        <item>Remote HttpURLConnection</item>
+        <item>Remote JAX-RS</item>
+        <item>Resources</item>
+        <item>Firebase</item>
+    </string-array>
+
+    <!--  the activities that will be called on menu item selection -->    
+    <string-array name="main_menu_activities">
+        <item>DataItemDetailsViewActivity</item>
+        <item>DataItemDetailsViewActivity</item>
+        <item>DataItemOverviewActivity</item>
+        <item>DataItemOverviewActivityWithCursorAdapter</item>
+        <item>DataItemOverviewActivityWithDataItemCursorAdapter</item>
+        <item>DataItemOverviewActivity</item>
+        <item>DataItemOverviewActivity</item>
+        <item>DataItemOverviewActivity</item>
+        <item>DataItemOverviewActivity</item>
+        <item>DataItemOverviewActivity</item>
+    </string-array>
+    
+    <!--  the delegate implementations that will be used on menu item selection -->    
+    <string-array name="main_menu_delegates">
+        <item>PreferencesDataItemCRUDOperationsImpl</item>
+        <item>PropertiesDataItemCRUDOperationsImpl</item>
+        <item>SQLiteDataItemCRUDOperationsImpl</item>
+        <item>SQLiteDataItemCRUDOperationsImpl</item>
+        <item>SQLiteDataItemCRUDOperationsImpl</item>
+        <item>HttpClientDataItemCRUDOperationsImpl</item>
+        <item>HttpURLConnectionDataItemCRUDOperationsImpl</item>
+        <item>JAXRSDataItemCRUDOperationsImpl</item>
+        <item>ResourcesDataItemCRUDOperationsImpl</item>
+        <item>firebase.FirebaseDataItemCRUDOperationsImpl</item>
+    </string-array>
+                
+    <!--  the item list as resources -->    
+    <string-array name="item_list">
+        <item>Item 1</item>        
+        <item>Item 2</item>        
+        <item>Item 3</item>        
+    </string-array>
+
+</resources>
