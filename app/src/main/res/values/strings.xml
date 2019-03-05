@@ -23,6 +23,7 @@
         <item>Remote HttpClient</item>
         <item>Remote HttpURLConnection</item>
         <item>Remote JAX-RS</item>
+        <item>Remote Retrofit</item>
         <item>Resources</item>
         <item>Firebase</item>
     </string-array>
@@ -34,6 +35,7 @@
         <item>DataItemOverviewActivity</item>
         <item>DataItemOverviewActivityWithCursorAdapter</item>
         <item>DataItemOverviewActivityWithDataItemCursorAdapter</item>
+        <item>DataItemOverviewActivity</item>
         <item>DataItemOverviewActivity</item>
         <item>DataItemOverviewActivity</item>
         <item>DataItemOverviewActivity</item>
@@ -51,6 +53,7 @@
         <item>HttpClientDataItemCRUDOperationsImpl</item>
         <item>HttpURLConnectionDataItemCRUDOperationsImpl</item>
         <item>JAXRSDataItemCRUDOperationsImpl</item>
+        <item>RetrofitDataItemCRUDOperationsImpl</item>
         <item>ResourcesDataItemCRUDOperationsImpl</item>
         <item>firebase.FirebaseDataItemCRUDOperationsImpl</item>
     </string-array>

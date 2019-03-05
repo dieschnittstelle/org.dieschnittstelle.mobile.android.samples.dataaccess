@@ -27,7 +27,7 @@ public interface IDataItemCRUDOperations {
 
 	@GET
 	@Path("/{itemId}")
-	public DataItem readDataItem(@PathParam("itemId")long dateItemId);
+	public DataItem readDataItem(@PathParam("itemId")long dataItemId);
 
 	@PUT
 	public DataItem updateDataItem(DataItem item);
