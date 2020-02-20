@@ -167,6 +167,8 @@ public class FirebaseDataItemCRUDOperationsImpl implements IDataItemCRUDOperatio
 
     @Override
     public void initialise(Runnable oninitialised) {
+        Toast.makeText(FirebaseDataItemCRUDOperationsImpl.this.context, "Initialise firebase authentication...",Toast.LENGTH_LONG).show();
+
         this.firebaseAuth = FirebaseAuth.getInstance();
 
         Log.i(logger,"initialise(): now trying to authenticate user...");
@@ -192,6 +194,10 @@ public class FirebaseDataItemCRUDOperationsImpl implements IDataItemCRUDOperatio
                                     Toast.LENGTH_LONG).show();
                         }
                     }
+                })
+                .addOnFailureListener(result -> {
+                    Toast.makeText(FirebaseDataItemCRUDOperationsImpl.this.context, "Authentication failed. Got: " + result + " with " + result.getMessage(),
+                            Toast.LENGTH_LONG).show();
                 });
     }
 
