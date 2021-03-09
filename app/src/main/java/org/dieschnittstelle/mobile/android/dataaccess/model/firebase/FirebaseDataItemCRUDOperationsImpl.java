@@ -2,7 +2,6 @@ package org.dieschnittstelle.mobile.android.dataaccess.model.firebase;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -90,44 +89,49 @@ public class FirebaseDataItemCRUDOperationsImpl implements IDataItemCRUDOperatio
 
     @Override
     public List<DataItem> readAllDataItems() {
-        FirebaseUser currentUser = firebaseAuth.getCurrentUser();
-        if (currentUser == null) {
-            ((Activity)context).runOnUiThread(() -> Toast.makeText(this.context,"readAllDataItems(): will not access firestore. user does not seem to be logged in.",Toast.LENGTH_LONG).show());
-            return new ArrayList<>();
-        }
-
-        // access the db and read out all documents for the current user
-        // as we implement a synchronous api, we use the task object returned from the crud operations on collections and the Tasks.await() method (further below)
-        Task<QuerySnapshot> readTask = firebaseFirestore.collection(FIREBASE_COLLECTION_NAME).whereEqualTo("owner",currentUser.getUid()).get();
-        readTask.addOnSuccessListener(docs -> {
-            Log.i(logger,"readAllDataItems(): access to firestore succesfully completed. Got: " + docs);
-        });
-        readTask.addOnFailureListener(err -> {
-            ((Activity)context).runOnUiThread(() -> Toast.makeText(context,"readAllDataItems(): failed to access firestore. Got error: " + err,Toast.LENGTH_LONG).show());
-        });
-        Log.i(logger,"readAllDataItems(): created task object for accessing firebase: " + readTask);
-
-        ArrayList<DataItem> items = new ArrayList<>();
-
         try {
-            Tasks.await(readTask);
-            QuerySnapshot readResult = readTask.getResult();
-            if (readResult != null) {
-                for (QueryDocumentSnapshot document : readResult) {
-                    items.add(createItemFromFirebaseDocument(document));
-                }
+            FirebaseUser currentUser = firebaseAuth.getCurrentUser();
+            if (currentUser == null) {
+                ((Activity) context).runOnUiThread(() -> Toast.makeText(this.context, "readAllDataItems(): will not access firestore. user does not seem to be logged in.", Toast.LENGTH_LONG).show());
+                return new ArrayList<>();
             }
 
-            Log.i(logger, "readAllDataItems(): read items from firestore: " + items);
+            // access the db and read out all documents for the current user
+            // as we implement a synchronous api, we use the task object returned from the crud operations on collections and the Tasks.await() method (further below)
+            Task<QuerySnapshot> readTask = firebaseFirestore.collection(FIREBASE_COLLECTION_NAME).whereEqualTo("owner", currentUser.getUid()).get();
+            readTask.addOnSuccessListener(docs -> {
+                Log.i(logger, "readAllDataItems(): access to firestore succesfully completed. Got: " + docs);
+            });
+            readTask.addOnFailureListener(err -> {
+                ((Activity) context).runOnUiThread(() -> Toast.makeText(context, "readAllDataItems(): failed to access firestore. Got error: " + err, Toast.LENGTH_LONG).show());
+            });
+            Log.i(logger, "readAllDataItems(): created task object for accessing firebase: " + readTask);
 
+            ArrayList<DataItem> items = new ArrayList<>();
+
+            try {
+                Tasks.await(readTask);
+                QuerySnapshot readResult = readTask.getResult();
+                if (readResult != null) {
+                    for (QueryDocumentSnapshot document : readResult) {
+                        items.add(createItemFromFirebaseDocument(document));
+                    }
+                }
+
+                Log.i(logger, "readAllDataItems(): read items from firestore: " + items);
+
+            } catch (Exception e) {
+                String errmsg = "readAllDataItems(): got exception trying to access firestore: " + e;
+                Log.e(logger, errmsg, e);
+                ((Activity) context).runOnUiThread(() -> Toast.makeText(context, errmsg, Toast.LENGTH_LONG).show());
+            }
+
+            return items;
         }
         catch (Exception e) {
-            String errmsg = "readAllDataItems(): got exception trying to access firestore: " + e;
-            Log.e(logger,errmsg,e);
-            ((Activity)context).runOnUiThread(() -> Toast.makeText(context,errmsg,Toast.LENGTH_LONG).show());
+            Log.e(logger,"readAllDataItems(): got exception: " + e,e);
+            return new ArrayList<>();
         }
-
-        return items;
     }
 
     @Override
@@ -176,7 +180,7 @@ public class FirebaseDataItemCRUDOperationsImpl implements IDataItemCRUDOperatio
         firebaseAuth.signInWithEmailAndPassword(myemail, mypwd)
                 .addOnCompleteListener((Activity)this.context, new OnCompleteListener<AuthResult>() {
                     @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
+                    public void onComplete(Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(logger, "initialise(): signInWithEmailAndPassword(): success");
