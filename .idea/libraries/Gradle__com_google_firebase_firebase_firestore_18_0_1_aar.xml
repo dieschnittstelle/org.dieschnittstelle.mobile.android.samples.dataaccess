@@ -3,6 +3,9 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-firestore-18.0.1.aar/d16d03daa5c6000959c305aec5e5b129/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/firebase-firestore-18.0.1.aar/d16d03daa5c6000959c305aec5e5b129/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ffb33732e1530163757f2bf8ee0cfba8/transformed/firebase-firestore-18.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ffb33732e1530163757f2bf8ee0cfba8/transformed/firebase-firestore-18.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ffb33732e1530163757f2bf8ee0cfba8/transformed/firebase-firestore-18.0.1/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-firestore/18.0.1/15300c0f653972670df0db5ebf68ac0863719e4b/firebase-firestore-18.0.1-javadoc.jar!/" />

@@ -3,8 +3,13 @@
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/6bdaa2dccdaf296a4cd4dbbe6ffc4800/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/grpc-android-1.16.1.aar/6bdaa2dccdaf296a4cd4dbbe6ffc4800/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/5a5d91f4f573155dd672c2898fe1d68c/transformed/grpc-android-1.16.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5a5d91f4f573155dd672c2898fe1d68c/transformed/grpc-android-1.16.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5a5d91f4f573155dd672c2898fe1d68c/transformed/grpc-android-1.16.1/res" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-android/1.16.1/1451385e7fda23e1f06823fc7432e105b201e65a/grpc-android-1.16.1-javadoc.jar!/" />
+    </JAVADOC>
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-android/1.16.1/3817b1c0e9e4349580a86fbb4bbe19f7992ed6e8/grpc-android-1.16.1-sources.jar!/" />
     </SOURCES>
