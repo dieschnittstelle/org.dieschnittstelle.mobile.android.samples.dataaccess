@@ -19,7 +19,7 @@ public class DataAccessApplication extends Application implements
 	/**
 	 * the baseUrl
 	 */
-	private String baseUrl = /*"http://10.0.3.2:8080/api/"*/"http://10.0.2.2:8080/api/"; /*"http://192.168.178.47:8080/api/"*/;
+	private String baseUrl = /*"http://10.0.3.2:8080/api/"*//*"http://10.0.2.2:8080/api/";*/ "http://192.168.2.101:8080/api/";
 	
 	@Override
 	public void onCreate() {
