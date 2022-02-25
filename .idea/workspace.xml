@@ -12,13 +12,16 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd5a648d-b652-4cd4-8fc2-5e9781760155" name="Default Changelist" comment="" />
+    <list default="true" id="fd5a648d-b652-4cd4-8fc2-5e9781760155" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[17211JEC200673]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -279,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645794484751</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update web application backend">
+      <created>1645808424935</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1645808424935</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -312,6 +322,7 @@
     <MESSAGE value="update to Java 11" />
     <MESSAGE value="update to Android Studio Default JDK (Java 11)" />
     <MESSAGE value="change setting for baseurl" />
-    <option name="LAST_COMMIT_MESSAGE" value="change setting for baseurl" />
+    <MESSAGE value="update web application backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="update web application backend" />
   </component>
 </project>
