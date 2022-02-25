@@ -16,10 +16,15 @@ public class DataAccessApplication extends Application implements
 
 	protected static String logger = DataAccessApplication.class.getName();
 
+	public static final String WEBAPP_BASEURL_LOCALHOST_FROM_ANDROIDSTUDIO_EMULATOR = "http://10.0.2.2:8080/api/";
+	public static final String WEBAPP_BASEURL_LOCALHOST_FROM_GENYMOTION_EMULATOR = "http://10.0.3.2:8080/api/";
+	// TODO: change this url using the ip address of the machine on which the web application is started
+	public static final String WEBAPP_BASEURL_IN_LOCAL_NETWORK = "http://192.168.2.101:8080/api/";
+
 	/**
-	 * the baseUrl
+	 * the baseUrl - TODO: assign the required value for your local development setup
 	 */
-	private String baseUrl = "http://10.0.3.2:8080/api/"/*"http://10.0.2.2:8080/api/";*/ /*"http://192.168.2.101:8080/api/"*/;
+	private String baseUrl = WEBAPP_BASEURL_IN_LOCAL_NETWORK;
 	
 	@Override
 	public void onCreate() {

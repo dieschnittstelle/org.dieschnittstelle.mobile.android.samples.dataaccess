@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
 
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
         applicationId "org.dieschnittstelle.mobile.android.dataaccess"
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion 31
         multiDexEnabled true
     }
 
@@ -26,12 +26,12 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:support-v4:30.0.0'
+    implementation 'com.android.support:support-v4:31.0.0'
     implementation files('libs/jackson-all-1.7.1.jar')
     implementation files('libs/jboss-jaxrs-api_1.1_spec-1.0.0.Final.jar')
     implementation files('libs/resteasy4Android.jar')
-    implementation 'com.google.firebase:firebase-auth:20.0.3'
-    implementation 'com.google.firebase:firebase-firestore:22.1.1'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-firestore:24.0.1'
     // retrofit api client
     implementation 'com.squareup.retrofit2:retrofit:2.7.1'
     implementation 'com.squareup.retrofit2:converter-gson:2.7.1'

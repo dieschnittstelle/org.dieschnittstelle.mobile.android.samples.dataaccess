@@ -23,6 +23,7 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:exported="true"
             android:name=".DataAccessActivity"
             android:label="@string/app_name" >
             <intent-filter>
