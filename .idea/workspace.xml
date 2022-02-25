@@ -14,6 +14,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fd5a648d-b652-4cd4-8fc2-5e9781760155" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/dieschnittstelle/mobile/android/dataaccess/DataAccessApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/dieschnittstelle/mobile/android/dataaccess/DataAccessApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645793280120</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update to Android Studio Default JDK (Java 11)">
+      <created>1645793812765</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1645793812765</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -298,6 +306,7 @@
     <MESSAGE value="change baseUrl assignment to android emulator" />
     <MESSAGE value="updated compile and target sdk and adapted app&#10;more explicit handling of different webapp usages" />
     <MESSAGE value="update to Java 11" />
-    <option name="LAST_COMMIT_MESSAGE" value="update to Java 11" />
+    <MESSAGE value="update to Android Studio Default JDK (Java 11)" />
+    <option name="LAST_COMMIT_MESSAGE" value="update to Android Studio Default JDK (Java 11)" />
   </component>
 </project>

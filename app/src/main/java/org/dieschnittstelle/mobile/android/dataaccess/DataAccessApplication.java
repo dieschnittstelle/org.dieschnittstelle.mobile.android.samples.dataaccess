@@ -24,7 +24,7 @@ public class DataAccessApplication extends Application implements
 	/**
 	 * the baseUrl - TODO: assign the required value for your local development setup
 	 */
-	private String baseUrl = WEBAPP_BASEURL_IN_LOCAL_NETWORK;
+	private String baseUrl = WEBAPP_BASEURL_LOCALHOST_FROM_ANDROIDSTUDIO_EMULATOR;
 	
 	@Override
 	public void onCreate() {
