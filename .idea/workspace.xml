@@ -13,17 +13,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd5a648d-b652-4cd4-8fc2-5e9781760155" name="Default Changelist" comment="update">
-      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/master/.android/avd/Pixel_3a_API_30_Fallback_2.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -165,7 +161,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sample-webapi-1.0-SNAPSHOT-war-exec.jar" type="JarApplication" temporary="true">
+    <configuration name="sample-webapi-1.0-SNAPSHOT-war-exec.jar" type="JarApplication">
       <option name="JAR_PATH" value="$PROJECT_DIR$/sample-webapi-1.0-SNAPSHOT-war-exec.jar" />
       <method v="2" />
     </configuration>
@@ -173,11 +169,6 @@
       <item itemvalue="Android App.app" />
       <item itemvalue="JAR Application.sample-webapi-1.0-SNAPSHOT-war-exec.jar" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JAR Application.sample-webapi-1.0-SNAPSHOT-war-exec.jar" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
