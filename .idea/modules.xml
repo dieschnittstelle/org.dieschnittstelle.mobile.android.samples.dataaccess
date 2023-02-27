@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/org.dieschnittstelle.mobile.android.samples.dataaccess.iml" filepath="$PROJECT_DIR$/org.dieschnittstelle.mobile.android.samples.dataaccess.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/org.dieschnittstelle.mobile.android.samples.dataaccess.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/org.dieschnittstelle.mobile.android.samples.dataaccess.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/org.dieschnittstelle.mobile.android.samples.dataaccess.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/org.dieschnittstelle.mobile.android.samples.dataaccess.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/org.dieschnittstelle.mobile.android.samples.dataaccess.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/org.dieschnittstelle.mobile.android.samples.dataaccess.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/org.dieschnittstelle.mobile.android.samples.dataaccess.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/org.dieschnittstelle.mobile.android.samples.dataaccess.app.unitTest.iml" />
     </modules>
   </component>
 </project>
